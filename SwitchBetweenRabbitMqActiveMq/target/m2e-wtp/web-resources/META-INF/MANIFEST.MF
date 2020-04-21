@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: rabbitmqsendandlisten
+Implementation-Version: 0.0.1
+Built-By: User
+Implementation-Vendor-Id: ravi.varma
+Build-Jdk: 1.8.0_201
+Implementation-URL: http://projects.spring.io/spring-boot/rabbitmqsend
+ andlisten/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
