@@ -1,0 +1,22 @@
+logging.level:
+  org.springframework.security: TRACE
+
+spring:
+  security:
+    filter:
+      dispatcher-types: async, error, request, forward
+    saml2:
+      relyingparty:
+        registration:
+          metadata:
+            entity-id: "techie"
+            singlelogout:
+              binding: POST
+              url: "{baseUrl}/saml/logout"
+              responseUrl: "{baseUrl}/saml/SingleLogout"
+            acs:
+              location: "{baseUrl}/saml/SSO"
+            assertingparty:
+              metadata-uri: https://login.microsoftonline.com/6a574231-a96f-4635-befa-77b5a19166d8/federationmetadata/2007-06/federationmetadata.xml?appid=4a4733ef-b345-4a6a-9474-2b0a46525ed1
+server:
+  port:9090
